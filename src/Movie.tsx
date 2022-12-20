@@ -7,13 +7,13 @@ const SEARCHAPI =
 
 
 import { useState } from "react"
-export default function Movie()
+export default function Movie({title, imgUrl})
 {
-    const [title, setTitle] = useState("spiderman")
-    const [img, setImg] = useState("https://image.pmgstatic.com/files/images/user/profile/165/919/165919261_7b9a54.jpg")
+    
+    
     return(
         <div className="movie">
-            <img src={img} alt="obrazok" className="imgofmovie"/>
+            <img src={imgUrl} alt="obrazok" className="imgofmovie"/>
                 
             
             <h3 className="titleofmovie">
